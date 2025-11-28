@@ -1,6 +1,26 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Caveat, Libre_Baskerville } from "next/font/google";
+
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-caveat",
+})
+
+const libreBaskervilleNormal = Libre_Baskerville({
+  subsets: ["latin"],
+  variable: "--font-libre-baskerville-normal",
+  weight: "400"
+})
+const libreBaskervilleBold = Libre_Baskerville({
+  subsets: ["latin"],
+  variable: "--font-libre-baskerville-bold",
+  weight: "700"
+})
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${caveat.variable} ${libreBaskervilleNormal.variable} ${libreBaskervilleBold.variable} antialiased`}
       >
         {children}
       </body>
