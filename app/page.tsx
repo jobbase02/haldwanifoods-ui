@@ -489,7 +489,7 @@ const AboutSection = () => {
             <span className=" z-10 text-orange-500 font-bold tracking-widest uppercase mb-2 block">
               Our Story
             </span>
-            <h2 className=" z-10 text-4xl md:text-5xl font-bold mb-6 font-caveat">
+            <h2 className=" z-10 text-5xl md:text-5xl lg:text-6xl font-bold mb-6 font-caveat">
               Born in the <span className="text-orange-500">Hills,</span>  <br />
               Loved by the <span className="text-orange-500">City...</span>
             </h2>
